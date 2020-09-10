@@ -38,7 +38,11 @@
                     </a>
                 </div>
                 <div class="promo__img">
-                    <img src="images/promo.png" alt="">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="images/promo.webp 1x, images/promo@2x.webp 2x, images/content/promo@3x.webp 3x">
+                        <img src="images/promo.png" srcset="images/promo@2x.png 2x, images/promo@3x.png 3x" alt="">
+                    </picture> 
                 </div>
             </div>
         </div>
