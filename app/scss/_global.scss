@@ -12,6 +12,8 @@ a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+    transition: all .3s;
+    cursor: pointer;
 }
 
 ul,
@@ -35,17 +37,16 @@ p {
 }
 
 body {
-    // color: $text;
-    // font-family: "SFProDisplay-Regular", sans-serif;
-    // font-size: 20px;
-    // line-height: 24px;
-    // font-weight: 400;
-    // overflow-x: hidden;
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
     min-width: 320px;
+    overflow-x: hidden;
 }
 
 .container {
-    max-width: 1200px;
-    padding: 0 15px;
+    max-width: 1000px;
+    padding: 0 30px;
     margin: 0 auto;
 }
