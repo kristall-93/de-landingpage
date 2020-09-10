@@ -2,16 +2,16 @@
 @import "_global";
 @import "_fonts";
 
+// start homepage
 // start header
 
 .header {
-    padding-top: 48px;
     padding-bottom: 190px;
     background: linear-gradient(0deg, rgba(152, 195, 232, 0.2) 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
 .header__top {
-    margin-bottom: 109px;
+    height: 129px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +43,7 @@
 
 .promo {
     position: relative;
+    margin-top: 60px;
 }
 
 .promo__title {
@@ -121,7 +122,7 @@
     border-radius: 10px;
     padding: 48px;
     margin-bottom: 100px;
-    img{
+    img {
         width: 100%;
     }
     &-img-1 {
@@ -257,6 +258,9 @@
     color: #fff;
     width: 100%;
 }
+.footer__wrapper.footer__wrapper-contactpage {
+    background: #fff;
+}
 
 .footer {
     background: #316099;
@@ -272,22 +276,19 @@
 .container.footer__container {
     margin-right: 162px;
 }
-// .container.client__container {
-//     margin-left: 183px;
-//     margin-right: 0;
-// }
 
 .footer__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 96px;
-    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.4);
 }
-// .footer__border{
-//     height: 1px;
-//     background-color: rgba($color: #ffffff, $alpha: 0.4);
-// }
+
+.footer__border {
+    height: 1px;
+    background-color: rgba($color: #ffffff, $alpha: 0.4);
+    margin-right: 192px;
+}
 
 .footer__work {
     max-width: 460px;
@@ -378,5 +379,47 @@
 }
 
 // end footer area
+// end homepage
+
+// start contact page
+// start header contactpage
+
+.header__contactpage {
+    background: #fff;
+    padding-bottom: 0;
+}
+
+// end header contactpage
+// start contact banner
+
+.contact__banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.contact__banner-title {
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.contact__banner-text {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+// end contact banner
+
+// end contact page
 
 @import "_media";
