@@ -64,13 +64,11 @@
                         <div class="contact__info-item__title">
                             ONLINE SERVICE
                         </div>
-                        <a class="contact__info-item__link link__site"
-                            href="http://www.afrianska.com/">www.afrianska.com</a>
-                        <a class="contact__info-item__link link__mail"
-                            href="mailto:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
+                        <a class="contact__info-item__link link__site" href="http://www.afrianska.com/">www.afrianska.com</a>
+                        <a class="contact__info-item__link link__mail" href="mailto:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
                     </div>
                 </div>
-                <div class="contact__form">
+                <form class="contact__form">
                     <div class="contact__form-title">
                         SEND US MESSAGE
                     </div>
@@ -87,7 +85,7 @@
                         <textarea placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit">SUBMIT</button>
-                </div>
+                </form>
             </div>
             <div class="contact__map">
                 <img src="images/map.jpg" alt="">
@@ -110,7 +108,9 @@
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         </p>
                     </div>
-                    <a class="footer__btn">Let’s Talk</a>
+                    <a class="footer__btn" data-fancybox data-src="#modal" href="javascript:;">
+                        Let’s Talk
+                    </a>
                 </div>
             </div>
             <div class="footer__border"></div>
@@ -168,9 +168,32 @@
         </div>
     </footer>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script> -->
+    <div class="contact__form-modal" style="display: none;" id="modal">
+        <form class="contact__form contact__form-popup" method="post" id="ajax_form" action="">
+            <div class="contact__form-title">
+                SEND US MESSAGE
+            </div>
+            <div class="contact__form-item">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="contact__form-item">
+                <label>Email</label>
+                <input type="text" name="mail" placeholder="Your Email" required>
+            </div>
+            <div class="contact__form-item">
+                <label>Message</label>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="btn_send-form" id="btn_send" type="submit">SUBMIT</button>
+            <div class="result_form-modal" id="result_form"></div>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>    
+    <script src="js/ajax.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
