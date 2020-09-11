@@ -570,4 +570,54 @@
 // end contact
 // end contact page
 
+//start modal form popup
+
+.fancybox-content{
+    padding: 0;
+    border-radius: 10px;
+}
+
+.contact__form.contact__form-popup{
+    .contact__form-title {
+        margin-bottom: 30px;
+    }
+    .contact__form-item {
+        margin-bottom: 20px;
+    }
+    button {
+        margin-top: 0px;
+    }
+    textarea {
+        height: 110px;
+    } 
+    input:required:valid {        
+        border: 2px solid #18e518;
+    } 
+}
+
+.contact__form-modal{
+    position: relative;
+}
+
+.result_form-modal{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000005;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.8);
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    max-width: 320px;
+    width: 100%;
+}
+
+//end modal form popup
+
+
 @import "_media";

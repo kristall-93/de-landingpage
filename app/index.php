@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -39,10 +39,9 @@
                 </div>
                 <div class="promo__img">
                     <picture>
-                        <source type="image/webp"
-                            srcset="images/promo.webp 1x, images/promo@2x.webp 2x, images/content/promo@3x.webp 3x">
+                        <source type="image/webp" srcset="images/promo.webp 1x, images/promo@2x.webp 2x, images/content/promo@3x.webp 3x">
                         <img src="images/promo.png" srcset="images/promo@2x.png 2x, images/promo@3x.png 3x" alt="">
-                    </picture> 
+                    </picture>
                 </div>
             </div>
         </div>
@@ -107,7 +106,7 @@
         </div>
     </section>
 
-     
+
     <section class="client">
         <div class="container client__container">
             <div class="client__top">
@@ -149,7 +148,9 @@
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         </p>
                     </div>
-                    <a class="footer__btn">Let’s Talk</a>
+                    <a class="footer__btn" data-fancybox data-src="#modal" href="javascript:;">
+                        Let’s Talk
+                    </a>
                 </div>
             </div>
             <div class="footer__border"></div>
@@ -206,10 +207,33 @@
             </div>
         </div>
     </footer>
- 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div class="contact__form-modal" style="display: none;" id="modal">
+        <form class="contact__form contact__form-popup" method="post" id="ajax_form" action="">
+            <div class="contact__form-title">
+                SEND US MESSAGE
+            </div>
+            <div class="contact__form-item">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="contact__form-item">
+                <label>Email</label>
+                <input type="text" name="mail" placeholder="Your Email" required>
+            </div>
+            <div class="contact__form-item">
+                <label>Message</label>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="btn_send-form" id="btn_send" type="submit">SUBMIT</button>
+            <div class="result_form-modal" id="result_form"></div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
